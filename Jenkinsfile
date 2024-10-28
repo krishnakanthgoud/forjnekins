@@ -9,7 +9,8 @@ pipeline {
      stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/krishnakanthgoud/forjnekins.git'
+                git branch: 'maingit ',
+                    url: 'https://github.com/krishnakanthgoud/forjnekins.git'
             }
         }
         stage('Build') {
