@@ -20,7 +20,7 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv('SONAR') {  // Replace 'SonarQube' with your server name
+                withSonarQubeEnv('SONARQUBE') {  // Replace 'SonarQube' with your server name
                     sh """
                         mvn clean verify sonar:sonar \
                         -Dsonar.projectKey=SPRING \
